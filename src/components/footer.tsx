@@ -10,7 +10,7 @@ export function Footer() {
           <div className="flex flex-col items-start">
             <Link href="/" className="mb-4 flex items-center gap-2">
               <Image
-                src="/images/pina-picante-logo.png"
+                src="/pina-picante-logo.png"
                 alt="Piña Picante Salsa"
                 width={60}
                 height={60}

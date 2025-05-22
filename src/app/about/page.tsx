@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative py-12">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=600&width=1920&query=aerial view of california central coast farm with mountains and ocean"
+            src="/california-coast-farm.png"
             alt="Central Coast Farm"
             fill
             className="object-cover object-center"
@@ -32,8 +32,11 @@ export default function AboutPage() {
             <div>
               <h2 className="mb-6 text-3xl font-bold text-secondary">How It All Started</h2>
               <p className="mb-4 text-muted-foreground">
-                Piña Picante Salsa began in 2015 when founder Maria Rodriguez, a third-generation farmer from
-                California's Central Coast, decided to turn her passion for growing peppers into something more.
+                Pina Picante was inspired by the legacy of my grandmother, Pauline Aguirre—affectionately called "Pina"
+                by those who couldn't quite pronounce her name. Her legendary salsa lit up every family gathering, and
+                her bold spirit sparked my love for spice. When she passed in 2021, I knew I had to honor her with a
+                creation of my own. Named after her and flavored with pineapple (piña), Pina Picante is a tribute to her
+                unforgettable heat and sweetness.
               </p>
               <p className="mb-4 text-muted-foreground">
                 What started as small-batch salsas for friends and family quickly gained popularity at local farmers'
@@ -43,7 +46,7 @@ export default function AboutPage() {
               <p className="text-muted-foreground">
                 Today, we remain committed to our roots: creating exceptional salsas using sustainable practices and the
                 finest locally sourced ingredients. Every jar is still handcrafted in small batches to ensure quality
-                and flavor.
+                and flavor—just as Pina would have wanted.
               </p>
             </div>
             <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[500px]">

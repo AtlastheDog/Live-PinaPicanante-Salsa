@@ -1,108 +1,70 @@
+import type { Metadata } from "next"
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 import Image from "next/image"
-import { Award, Leaf, Truck } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "About Pina Picante.",
+}
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col">
-      {/* Hero Banner */}
-      <section className="relative py-12">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/placeholder.svg?height=600&width=1920&query=aerial view of california central coast farm with mountains and ocean"
-            alt="Central Coast Farm"
-            fill
-            className="object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
+    <section className="container grid items-center gap-6 pt-6 pb-8 md:py-10">
+      <div className="flex max-w-[980px] flex-col items-start gap-2">
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-6xl">
+          About Pina Picante
+        </h1>
+        <p className="max-w-[700px] text-lg text-muted-foreground">
+          Learn more about our story and commitment to quality.
+        </p>
+      </div>
+      <div className="flex gap-4">
+        <Link href="/contact" className={cn(buttonVariants())}>
+          Contact Us
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
+      </div>
 
-        <div className="container relative z-10 px-4 py-12 text-center text-white md:px-6">
-          <h1 className="mb-4 text-4xl font-bold md:text-5xl">Our Story</h1>
-          <p className="mx-auto max-w-2xl text-lg text-white/90">
-            From farm to jar, discover the passion and craftsmanship behind Piña Picante Salsa.
-          </p>
-        </div>
-      </section>
-
-      {/* Our Story */}
-      <section className="py-16">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-12 md:grid-cols-2 md:items-center">
-            <div>
-              <h2 className="mb-6 text-3xl font-bold text-secondary">How It All Started</h2>
-              <p className="mb-4 text-muted-foreground">
-                Piña Picante Salsa began in 2015 when founder Maria Rodriguez, a third-generation farmer from
-                California's Central Coast, decided to turn her passion for growing peppers into something more.
-              </p>
-              <p className="mb-4 text-muted-foreground">
-                What started as small-batch salsas for friends and family quickly gained popularity at local farmers'
-                markets. People couldn't get enough of the fresh, vibrant flavors that captured the essence of
-                California's agricultural bounty.
-              </p>
-              <p className="text-muted-foreground">
-                Today, we remain committed to our roots: creating exceptional salsas using sustainable practices and the
-                finest locally sourced ingredients. Every jar is still handcrafted in small batches to ensure quality
-                and flavor.
-              </p>
-            </div>
-            <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[500px]">
-              <Image
-                src="/placeholder.svg?height=800&width=600&query=farmer harvesting chili peppers in california farm"
-                alt="Harvesting Peppers"
-                fill
-                className="object-cover object-center"
-              />
+      <section className="container grid items-center gap-6 pt-6 pb-8 md:py-10">
+        <div className="flex max-w-[980px] flex-col items-start gap-2">
+          <h2 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl">Our Story</h2>
+          <div className="mt-6">
+            <div className="grid gap-12 md:grid-cols-2 md:items-center">
+              <div>
+                <h3 className="mb-6 text-2xl font-bold text-secondary">How It All Started</h3>
+                <p className="mb-4 text-muted-foreground">
+                  Pina Picante was inspired by the legacy of my grandmother, Pauline Aguirre—affectionately called
+                  "Pina" by those who couldn't quite pronounce her name. Her legendary salsa lit up every family
+                  gathering, and her bold spirit sparked my love for spice. When she passed in 2021, I knew I had to
+                  honor her with a creation of my own. Named after her and flavored with pineapple (piña), Pina Picante
+                  is a tribute to her unforgettable heat and sweetness.
+                </p>
+                <p className="mb-4 text-muted-foreground">
+                  What started as small-batch salsas for friends and family quickly gained popularity at local farmers'
+                  markets. People couldn't get enough of the fresh, vibrant flavors that captured the essence of
+                  California's agricultural bounty.
+                </p>
+                <p className="text-muted-foreground">
+                  Today, we remain committed to our roots: creating exceptional salsas using sustainable practices and
+                  the finest locally sourced ingredients. Every jar is still handcrafted in small batches to ensure
+                  quality and flavor—just as Pina would have wanted.
+                </p>
+              </div>
+              <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[500px]">
+                <Image
+                  src="/california-chili-harvest.png"
+                  alt="Harvesting Peppers"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Our Values */}
-      <section className="bg-accent py-16">
-        <div className="container px-4 md:px-6">
-          <div className="mb-10 text-center">
-            <h2 className="mb-2 text-3xl font-bold text-secondary md:text-4xl">Our Values</h2>
-            <p className="mx-auto max-w-2xl text-muted-foreground">
-              The principles that guide everything we do at Piña Picante Salsa.
-            </p>
-          </div>
-
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-lg bg-white p-6 shadow-md">
-              <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
-                <Leaf className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-secondary">Sustainability</h3>
-              <p className="text-muted-foreground">
-                We're committed to sustainable farming practices that protect our land for future generations. From
-                water conservation to organic growing methods, we strive to minimize our environmental impact.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6 shadow-md">
-              <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
-                <Award className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-secondary">Quality</h3>
-              <p className="text-muted-foreground">
-                We never compromise on quality. From selecting the perfect peppers to our meticulous small-batch
-                production process, excellence is our standard at every step.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6 shadow-md">
-              <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
-                <Truck className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-secondary">Community</h3>
-              <p className="text-muted-foreground">
-                We support local farmers and businesses, creating a stronger community and economy. We believe in fair
-                partnerships and giving back to the region that makes our products possible.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </section>
   )
 }
