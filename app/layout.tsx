@@ -20,6 +20,14 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Piña Picante Salsa | Handcrafted in California",
   description: "Artisanal salsas made with fresh, locally sourced ingredients from California's Central Coast.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
     generator: 'v0.dev'
 }
 
@@ -30,6 +38,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon-16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/icon-32.png" sizes="32x32" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <div className="flex min-h-screen flex-col">
           <Header />
