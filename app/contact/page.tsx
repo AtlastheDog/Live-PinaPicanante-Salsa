@@ -9,8 +9,8 @@ export default function ContactPage() {
       <section className="relative py-12">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=600&width=1920&query=california farm with mountains in background"
-            alt="California Central Coast"
+            src="/our-story-hero-farm.jpg"
+            alt="Agricultural equipment working in California Central Coast farmland"
             fill
             className="object-cover object-center"
           />
@@ -37,7 +37,7 @@ export default function ContactPage() {
               <div className="mb-8 overflow-hidden rounded-lg">
                 <div className="relative h-[300px] w-full">
                   <Image
-                    src="/placeholder.svg?height=600&width=800&query=farm business owners with mountains in background"
+                    src="/placeholder.svg?height=600&width=800"
                     alt="Piña Picante Salsa Owners"
                     fill
                     className="object-cover object-center"

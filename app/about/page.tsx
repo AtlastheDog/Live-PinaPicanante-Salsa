@@ -9,8 +9,8 @@ export default function AboutPage() {
       <section className="relative py-12">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/california-coast-farm.png"
-            alt="Central Coast Farm"
+            src="/our-story-hero-farm.jpg"
+            alt="Agricultural equipment working in California Central Coast farmland"
             fill
             className="object-cover object-center"
           />
@@ -298,170 +298,50 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-lg bg-white/10 p-6 backdrop-blur-sm">
               <div className="mb-4 h-64 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Maria Rodriguez"
+                  src="/gabriela-fernandez-profile.png"
+                  alt="Gabriela Fernandez"
                   width={400}
                   height={400}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <h3 className="mb-1 text-xl font-bold">Maria Rodriguez</h3>
+              <h3 className="mb-1 text-xl font-bold">Gabriela Fernandez</h3>
               <p className="mb-3 text-primary">Founder & Head Salsa Maker</p>
               <p className="text-white/80">
-                A third-generation farmer with a passion for peppers and sustainable agriculture. Maria's creativity and
-                commitment to quality are the heart of our company.
+                Our very own expert chef with a passion of spicing things up and helping her community.
               </p>
             </div>
 
             <div className="overflow-hidden rounded-lg bg-white/10 p-6 backdrop-blur-sm">
               <div className="mb-4 h-64 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="James Chen"
+                  src="/mcasey-profile.jpg"
+                  alt="Matthew Casey"
                   width={400}
                   height={400}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <h3 className="mb-1 text-xl font-bold">James Chen</h3>
+              <h3 className="mb-1 text-xl font-bold">Matthew Casey</h3>
               <p className="mb-3 text-primary">Culinary Director</p>
-              <p className="text-white/80">
-                A former restaurant chef with a knack for balancing flavors. James brings culinary expertise to our
-                salsa development process.
-              </p>
+              <p className="text-white/80">Resident salsa consumer and aspiring better process control expert.</p>
             </div>
 
             <div className="overflow-hidden rounded-lg bg-white/10 p-6 backdrop-blur-sm">
               <div className="mb-4 h-64 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Sophia Kim"
+                  src="/atlas-cleo-new.png"
+                  alt="Atlas and Cleo"
                   width={400}
                   height={400}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <h3 className="mb-1 text-xl font-bold">Sophia Kim</h3>
+              <h3 className="mb-1 text-xl font-bold">Atlas and Cleo</h3>
               <p className="mb-3 text-primary">Farm Manager</p>
               <p className="text-white/80">
-                With a degree in sustainable agriculture, Sophia oversees our farming operations and ensures we grow the
-                best peppers possible.
+                Atlas and Cleo are responsible for filling our lives with love and nothing more.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Visit Us */}
-      <section className="py-16">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-8 md:grid-cols-2 md:items-center">
-            <div>
-              <h2 className="mb-4 text-3xl font-bold text-secondary">Visit Our Farm</h2>
-              <p className="mb-4 text-muted-foreground">
-                Experience Piña Picante Salsa firsthand at our farm and production facility. We offer tours, tastings,
-                and a chance to see how our salsas are made.
-              </p>
-              <div className="mb-6 space-y-3">
-                <div className="flex items-start gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-5 w-5 text-primary"
-                  >
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  <div>
-                    <p className="font-medium text-secondary">Address:</p>
-                    <p className="text-muted-foreground">123 Pepper Lane, Santa Maria, CA 93455</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-5 w-5 text-primary"
-                  >
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
-                  <div>
-                    <p className="font-medium text-secondary">Phone:</p>
-                    <p className="text-muted-foreground">(805) 555-1234</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-5 w-5 text-primary"
-                  >
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
-                  <div>
-                    <p className="font-medium text-secondary">Email:</p>
-                    <p className="text-muted-foreground">info@pinapicantesalsa.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-5 w-5 text-primary"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  <div>
-                    <p className="font-medium text-secondary">Hours:</p>
-                    <p className="text-muted-foreground">Thursday - Sunday: 10am - 4pm</p>
-                    <p className="text-muted-foreground">Tours available by appointment</p>
-                  </div>
-                </div>
-              </div>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 font-medium text-white hover:bg-primary/90 transition-colors"
-              >
-                Schedule a Visit <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-            <div className="relative h-[400px] overflow-hidden rounded-lg">
-              <Image
-                src="/placeholder.svg?height=800&width=600"
-                alt="Our Farm Store"
-                fill
-                className="object-cover object-center"
-              />
             </div>
           </div>
         </div>
