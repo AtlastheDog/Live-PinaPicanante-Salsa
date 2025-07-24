@@ -51,11 +51,115 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[500px]">
               <Image
-                src="/placeholder.svg?height=800&width=600&query=farmer harvesting chili peppers in california farm"
+                src="/placeholder.svg?height=800&width=600"
                 alt="Harvesting Peppers"
                 fill
                 className="object-cover object-center"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Supporting Farm Workers Section */}
+      <section className="bg-accent py-16">
+        <div className="container px-4 md:px-6">
+          <div className="mx-auto max-w-4xl">
+            <div className="mb-10 text-center">
+              <h2 className="mb-4 text-3xl font-bold text-secondary md:text-4xl">Supporting Those Who Feed Us</h2>
+              <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+                Our commitment extends beyond crafting exceptional salsas to supporting the hardworking individuals who
+                make our products possible.
+              </p>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-2 md:items-center">
+              <div>
+                <h3 className="mb-4 text-2xl font-bold text-secondary">Our Commitment to Farm Worker Rights</h3>
+                <p className="mb-4 text-muted-foreground">
+                  At Piña Picante, we believe that the people who harvest our ingredients deserve fair wages, safe
+                  working conditions, and dignity in their labor. Farm workers are the backbone of our food system, yet
+                  they often face challenging working conditions and economic hardship.
+                </p>
+                <p className="mb-4 text-muted-foreground">
+                  That's why we've made a commitment to give back to the community that makes our business possible. We
+                  proudly donate <strong className="text-secondary">15% of our profits</strong> to{" "}
+                  <strong className="text-primary">[Organization Name - To Be Updated]</strong>, an organization
+                  dedicated to advocating for farm workers' rights, improving working conditions, and supporting
+                  agricultural communities.
+                </p>
+                <p className="mb-6 text-muted-foreground">
+                  Through this partnership, we're not just creating delicious salsas—we're contributing to a more
+                  equitable and sustainable food system that honors the people who work tirelessly to bring fresh
+                  ingredients from farm to table.
+                </p>
+
+                <div className="rounded-lg bg-white p-6 shadow-sm">
+                  <h4 className="mb-3 text-lg font-bold text-secondary">How Your Purchase Makes a Difference</h4>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <svg className="mt-1 h-4 w-4 shrink-0 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span>Supports fair wage advocacy programs</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="mt-1 h-4 w-4 shrink-0 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span>Funds workplace safety initiatives</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="mt-1 h-4 w-4 shrink-0 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span>Provides educational resources and legal support</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="mt-1 h-4 w-4 shrink-0 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span>Strengthens agricultural communities</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[500px]">
+                <Image
+                  src="/placeholder.svg?height=800&width=600"
+                  alt="Farm workers in the field"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
+            </div>
+
+            <div className="mt-10 text-center">
+              <div className="mx-auto max-w-2xl rounded-lg bg-secondary p-6 text-white">
+                <h4 className="mb-2 text-xl font-bold">Every Jar Makes a Difference</h4>
+                <p className="text-white/90">
+                  When you choose Piña Picante Salsa, you're not just enjoying exceptional flavor—you're supporting a
+                  mission to create positive change in agricultural communities. Together, we can build a more equitable
+                  food system.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -178,7 +282,7 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-lg bg-white/10 p-6 backdrop-blur-sm">
               <div className="mb-4 h-64 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=400&query=portrait of latina woman farmer in her 40s"
+                  src="/placeholder.svg?height=400&width=400"
                   alt="Maria Rodriguez"
                   width={400}
                   height={400}
@@ -196,7 +300,7 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-lg bg-white/10 p-6 backdrop-blur-sm">
               <div className="mb-4 h-64 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=400&query=portrait of man in his 30s with chef coat"
+                  src="/placeholder.svg?height=400&width=400"
                   alt="James Chen"
                   width={400}
                   height={400}
@@ -214,7 +318,7 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-lg bg-white/10 p-6 backdrop-blur-sm">
               <div className="mb-4 h-64 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=400&query=portrait of woman in her 30s in farm setting"
+                  src="/placeholder.svg?height=400&width=400"
                   alt="Sophia Kim"
                   width={400}
                   height={400}
@@ -337,7 +441,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg?height=800&width=600&query=rustic farm store with hot sauce display"
+                src="/placeholder.svg?height=800&width=600"
                 alt="Our Farm Store"
                 fill
                 className="object-cover object-center"

@@ -39,7 +39,7 @@ export default function ProductsPage() {
                 Piña Picante
               </button>
               <button className="rounded-full bg-[#f8f3e6] px-4 py-1 text-sm font-medium text-[#8b4513] hover:bg-[#8b4513] hover:text-white transition-colors">
-                Piña Picante Classic
+                Classic
               </button>
             </div>
 
@@ -55,18 +55,18 @@ export default function ProductsPage() {
 
           {/* Products */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {/* Product 1 - Piña Picante Hot */}
+            {/* Product 1 - Piña Picante Hot (Featured First) */}
             <Link
               href="/products/pina-picante-hot"
               className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg"
             >
               <div className="relative h-64 overflow-hidden">
-                <div className="absolute left-0 top-0 z-10 rounded-br-lg bg-[#c25a28] px-3 py-1 text-sm font-bold text-white">
-                  Best Seller
+                <div className="absolute left-0 top-0 z-10 rounded-br-lg bg-gradient-to-r from-purple-600 to-pink-600 px-3 py-1 text-sm font-bold text-white shadow-lg">
+                  Seen at Mid-State Fair
                 </div>
                 <Image
-                  src="/placeholder.svg?height=400&width=600&query=jar of red salsa with pineapple chunks and habanero peppers"
-                  alt="Piña Picante Hot"
+                  src="/pineapple-habanero-mason-jar.png"
+                  alt="Piña Picante - Hot"
                   fill
                   className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 />
@@ -109,7 +109,7 @@ export default function ProductsPage() {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-[#c25a28]">$12.99</span>
+                  <span className="text-lg font-bold text-[#c25a28]">$14.59</span>
                   <button className="rounded-md bg-[#8b4513] px-3 py-1 text-sm font-medium text-white hover:bg-[#8b4513]/90 transition-colors">
                     Pre-Order
                   </button>
@@ -124,8 +124,8 @@ export default function ProductsPage() {
             >
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600&query=jar of orange salsa with pineapple chunks and mild peppers"
-                  alt="Piña Picante Mild"
+                  src="/pina-picante-mild-jar.webp"
+                  alt="Piña Picante - Mild"
                   fill
                   className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 />
@@ -176,9 +176,9 @@ export default function ProductsPage() {
               </div>
             </Link>
 
-            {/* Product 3 - Piña Picante Classic Hot */}
+            {/* Product 3 - Classic Hot */}
             <Link
-              href="/products/pina-picante-classic-hot"
+              href="/products/classic-hot"
               className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg"
             >
               <div className="relative h-64 overflow-hidden">
@@ -186,14 +186,14 @@ export default function ProductsPage() {
                   Traditional
                 </div>
                 <Image
-                  src="/placeholder.svg?height=400&width=600&query=jar of traditional red salsa with habanero peppers"
-                  alt="Piña Picante Classic Hot"
+                  src="/classic-hot-salsa-jar.webp"
+                  alt="Classic - Hot"
                   fill
                   className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="mb-1 text-lg font-bold text-[#8b4513]">Piña Picante Classic - Hot</h3>
+                <h3 className="mb-1 text-lg font-bold text-[#8b4513]">Classic - Hot</h3>
                 <p className="mb-2 text-sm text-gray-600">
                   A traditional blended salsa with roasted habanero, jalapeño, tomatoes, and garlic. Perfect for
                   dipping.
@@ -231,7 +231,7 @@ export default function ProductsPage() {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-[#c25a28]">$11.99</span>
+                  <span className="text-lg font-bold text-[#c25a28]">$12.99</span>
                   <button className="rounded-md bg-[#8b4513] px-3 py-1 text-sm font-medium text-white hover:bg-[#8b4513]/90 transition-colors">
                     Pre-Order
                   </button>
@@ -239,21 +239,21 @@ export default function ProductsPage() {
               </div>
             </Link>
 
-            {/* Product 4 - Piña Picante Classic Mild */}
+            {/* Product 4 - Classic Mild */}
             <Link
-              href="/products/pina-picante-classic-mild"
+              href="/products/classic-mild"
               className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg"
             >
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600&query=jar of traditional mild red salsa with jalapeño peppers"
-                  alt="Piña Picante Classic Mild"
+                  src="/classic-mild-salsa-jar.png"
+                  alt="Classic - Mild"
                   fill
                   className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="mb-1 text-lg font-bold text-[#8b4513]">Piña Picante Classic - Mild</h3>
+                <h3 className="mb-1 text-lg font-bold text-[#8b4513]">Classic - Mild</h3>
                 <p className="mb-2 text-sm text-gray-600">
                   A traditional mild blended salsa with roasted jalapeño, tomatoes, and garlic. Family-friendly heat
                   level.
@@ -291,7 +291,7 @@ export default function ProductsPage() {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-[#c25a28]">$11.99</span>
+                  <span className="text-lg font-bold text-[#c25a28]">$12.99</span>
                   <button className="rounded-md bg-[#8b4513] px-3 py-1 text-sm font-medium text-white hover:bg-[#8b4513]/90 transition-colors">
                     Pre-Order
                   </button>

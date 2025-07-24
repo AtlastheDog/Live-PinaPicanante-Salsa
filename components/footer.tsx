@@ -46,18 +46,23 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-accent/80 hover:text-accent transition-colors">
-                  Salsas
+                <Link href="/products/pina-picante-hot" className="text-accent/80 hover:text-accent transition-colors">
+                  Piña Picante - Hot
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-accent/80 hover:text-accent transition-colors">
-                  Gift Sets
+                <Link href="/products/pina-picante-mild" className="text-accent/80 hover:text-accent transition-colors">
+                  Piña Picante - Mild
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-accent/80 hover:text-accent transition-colors">
-                  Merchandise
+                <Link href="/products/classic-hot" className="text-accent/80 hover:text-accent transition-colors">
+                  Classic - Hot
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/classic-mild" className="text-accent/80 hover:text-accent transition-colors">
+                  Classic - Mild
                 </Link>
               </li>
             </ul>
@@ -107,7 +112,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-6 text-center text-xs text-accent/60">
-          <p>© {new Date().getFullYear()} Piña Picante Salsa. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Piña Picante Salsa.</p>
           <div className="mt-2 flex justify-center gap-4">
             <Link href="#" className="hover:text-accent transition-colors">
               Privacy Policy

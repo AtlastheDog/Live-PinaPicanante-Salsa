@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Award, Leaf, ShoppingBag } from "lucide-react"
+import { ArrowRight, Award, Leaf, ShoppingBag, Heart } from "lucide-react"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export default function Home() {
@@ -48,9 +48,28 @@ export default function Home() {
               >
                 Our Story
               </Link>
+              <Link
+                href="/contact?support=true"
+                className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-pink-500 to-rose-500 px-6 py-3 font-medium text-white shadow-lg hover:from-pink-600 hover:to-rose-600 transition-all transform hover:scale-105"
+              >
+                <Heart className="h-5 w-5" />
+                Show Support!
+                <span className="text-sm opacity-90">Click here to indicate interest</span>
+              </Link>
             </div>
           </div>
         </section>
+
+        {/* Support Badge - Floating */}
+        <div className="fixed bottom-6 right-6 z-50 md:hidden">
+          <Link
+            href="/contact?support=true"
+            className="flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 px-4 py-3 text-sm font-medium text-white shadow-lg hover:from-pink-600 hover:to-rose-600 transition-all transform hover:scale-105"
+          >
+            <Heart className="h-4 w-4" />
+            Show Support!
+          </Link>
+        </div>
 
         {/* Featured Products */}
         <section className="bg-accent py-16">
@@ -63,25 +82,55 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Product Card 1 */}
+              {/* Product Card 1 - Piña Picante Hot */}
               <div className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg">
                 <div className="relative h-64 overflow-hidden">
+                  <div className="absolute left-0 top-0 z-10 rounded-br-lg bg-gradient-to-r from-purple-600 to-pink-600 px-3 py-1 text-sm font-bold text-white shadow-lg">
+                    Seen at Mid-State Fair
+                  </div>
                   <Image
-                    src="/red-salsa-jar.png"
-                    alt="Original Salsa"
+                    src="/pineapple-habanero-mason-jar.png"
+                    alt="Piña Picante - Hot"
                     fill
                     className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-xl font-bold text-secondary">Original Salsa</h3>
+                  <h3 className="mb-2 text-xl font-bold text-secondary">Piña Picante - Hot</h3>
                   <p className="mb-4 text-muted-foreground">
-                    Our signature blend with the perfect balance of heat and flavor.
+                    Our signature blend with the perfect balance of pineapple sweetness and habanero heat.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-lg font-bold text-primary">$14.59</span>
+                    <Link
+                      href="/products/pina-picante-hot"
+                      className="flex items-center gap-1 font-medium text-secondary hover:text-primary transition-colors"
+                    >
+                      View Details <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Product Card 2 - Piña Picante Mild */}
+              <div className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg">
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src="/pina-picante-mild-jar.webp"
+                    alt="Piña Picante - Mild"
+                    fill
+                    className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="mb-2 text-xl font-bold text-secondary">Piña Picante - Mild</h3>
+                  <p className="mb-4 text-muted-foreground">
+                    A gentle blend of pineapple and jalapeños for a milder, family-friendly kick.
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-primary">$12.99</span>
                     <Link
-                      href="/products"
+                      href="/products/pina-picante-mild"
                       className="flex items-center gap-1 font-medium text-secondary hover:text-primary transition-colors"
                     >
                       View Details <ArrowRight className="h-4 w-4" />
@@ -90,52 +139,25 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Product Card 2 */}
+              {/* Product Card 3 - Classic Hot */}
               <div className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg">
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600&query=jar of green salsa with jalapenos and lime"
-                    alt="Jalapeño Lime Salsa"
+                    src="/classic-hot-salsa-jar.webp"
+                    alt="Classic - Hot"
                     fill
                     className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-xl font-bold text-secondary">Jalapeño Lime</h3>
+                  <h3 className="mb-2 text-xl font-bold text-secondary">Classic - Hot</h3>
                   <p className="mb-4 text-muted-foreground">
-                    A zesty blend of jalapeños and fresh lime for a tangy kick.
+                    Traditional salsa with roasted habaneros and jalapeños for authentic heat.
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-primary">$13.99</span>
+                    <span className="text-lg font-bold text-primary">$12.99</span>
                     <Link
-                      href="/products"
-                      className="flex items-center gap-1 font-medium text-secondary hover:text-primary transition-colors"
-                    >
-                      View Details <ArrowRight className="h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              {/* Product Card 3 */}
-              <div className="group overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg">
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600&query=jar of yellow salsa with pineapple and habanero peppers"
-                    alt="Pineapple Habanero Salsa"
-                    fill
-                    className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-xl font-bold text-secondary">Pineapple Habanero</h3>
-                  <p className="mb-4 text-muted-foreground">
-                    Sweet pineapple meets fiery habanero for a tropical heat.
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-primary">$14.99</span>
-                    <Link
-                      href="/products"
+                      href="/products/classic-hot"
                       className="flex items-center gap-1 font-medium text-secondary hover:text-primary transition-colors"
                     >
                       View Details <ArrowRight className="h-4 w-4" />
@@ -162,8 +184,8 @@ export default function Home() {
             <div className="grid items-center gap-8 md:grid-cols-2">
               <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[500px]">
                 <Image
-                  src="/placeholder.svg?height=800&width=600&query=farmer harvesting chili peppers in california farm with mountains in background"
-                  alt="Our Farm"
+                  src="/farm-dog-deck.png"
+                  alt="Farm life at Piña Picante - our beloved farm dog enjoying the peaceful countryside"
                   fill
                   className="object-cover object-center"
                 />
@@ -178,7 +200,8 @@ export default function Home() {
                 </p>
                 <p className="mb-6 text-muted-foreground">
                   Every jar is made in small batches using traditional methods, ensuring the highest quality and most
-                  vibrant flavors. We're committed to supporting local farmers and sustainable practices.
+                  vibrant flavors. We're committed to supporting local farmers and sustainable practices, all while
+                  enjoying the peaceful farm life that inspires our work.
                 </p>
                 <Link href="/about" className="inline-flex items-center gap-2 font-medium text-primary hover:underline">
                   Learn More About Our Process <ArrowRight className="h-4 w-4" />
@@ -244,6 +267,32 @@ export default function Home() {
                   We never use artificial preservatives, colors, or flavors. Just real ingredients for real flavor.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Community Support Section */}
+        <section className="bg-gradient-to-r from-pink-50 to-rose-50 py-16">
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto max-w-3xl text-center">
+              <div className="mb-6 inline-flex rounded-full bg-gradient-to-r from-pink-500 to-rose-500 p-3">
+                <Heart className="h-8 w-8 text-white" />
+              </div>
+              <h2 className="mb-4 text-3xl font-bold text-secondary md:text-4xl">Show Your Support!</h2>
+              <p className="mb-8 text-muted-foreground">
+                Love what we're doing? Help us grow by showing your support for Piña Picante Salsa. Your interest helps
+                us understand our community and plan for the future. No purchase necessary - just let us know you care!
+              </p>
+              <Link
+                href="/contact?support=true"
+                className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-pink-500 to-rose-500 px-8 py-4 text-lg font-medium text-white shadow-lg hover:from-pink-600 hover:to-rose-600 transition-all transform hover:scale-105"
+              >
+                <Heart className="h-6 w-6" />
+                Click Here to Indicate Interest
+              </Link>
+              <p className="mt-4 text-sm text-muted-foreground">
+                Join our community of salsa supporters and be the first to know about new products and events!
+              </p>
             </div>
           </div>
         </section>

@@ -3,15 +3,15 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import PreOrderForm from "@/components/pre-order-form"
 
-// Define product data
+// Define product data with updated names
 const products = {
   "pina-picante-hot": {
     name: "Piña Picante - Hot",
     description: "A bold, complex blend of roasted habanero, jalapeño, tomatoes, and garlic with sweet pineapple.",
     longDescription:
       "Our signature Piña Picante Hot combines the sweetness of pineapple with the fiery kick of habanero peppers. Each jar is handcrafted with roasted vegetables to create a complex flavor profile that's both sweet and spicy. The habaneros provide a significant heat that builds gradually, while the pineapple offers a tropical sweetness that balances the fire. Perfect for those who love their salsa with a serious kick.",
-    price: "$12.99",
-    image: "/placeholder.svg?height=600&width=800&query=jar of red salsa with pineapple chunks and habanero peppers",
+    price: "$14.59",
+    image: "/pineapple-habanero-mason-jar.png",
     heatLevel: 4,
     ingredients:
       "Tomatoes, Pineapple, Habanero Peppers, Jalapeño Peppers, Onion, Garlic, Cilantro, Lime Juice, Salt, Spices",
@@ -23,31 +23,31 @@ const products = {
     longDescription:
       "Our Piña Picante Mild offers all the complex flavors of our signature salsa but with a gentler heat level. The sweet pineapple shines through, complemented by roasted jalapeños that provide just enough warmth without overwhelming the palate. This version is perfect for those who appreciate flavor over fire, and it's a family-friendly option that everyone can enjoy.",
     price: "$12.99",
-    image: "/placeholder.svg?height=600&width=800&query=jar of orange salsa with pineapple chunks and mild peppers",
+    image: "/pina-picante-mild-jar.webp",
     heatLevel: 2,
     ingredients: "Tomatoes, Pineapple, Jalapeño Peppers, Onion, Garlic, Cilantro, Lime Juice, Salt, Spices",
     pairings: "Breakfast eggs, avocado toast, grilled chicken, or as a marinade for shrimp",
   },
-  "pina-picante-classic-hot": {
-    name: "Piña Picante Classic - Hot",
+  "classic-hot": {
+    name: "Classic - Hot",
     description:
       "A traditional blended salsa with roasted habanero, jalapeño, tomatoes, and garlic. Perfect for dipping.",
     longDescription:
       "Our Classic Hot salsa is a traditional recipe that focuses on the pure, robust flavors of roasted vegetables. Without the pineapple, this salsa lets the habanero and jalapeño peppers take center stage, creating a straightforward heat that salsa purists will appreciate. The smooth, blended texture makes it perfect for dipping, while the complex roasted flavors elevate it above mass-produced alternatives.",
-    price: "$11.99",
-    image: "/placeholder.svg?height=600&width=800&query=jar of traditional red salsa with habanero peppers",
+    price: "$12.99",
+    image: "/classic-hot-salsa-jar.webp",
     heatLevel: 4,
     ingredients: "Tomatoes, Habanero Peppers, Jalapeño Peppers, Onion, Garlic, Cilantro, Lime Juice, Salt, Spices",
     pairings: "Tortilla chips, tacos, burritos, or as a spicy addition to soups and stews",
   },
-  "pina-picante-classic-mild": {
-    name: "Piña Picante Classic - Mild",
+  "classic-mild": {
+    name: "Classic - Mild",
     description:
       "A traditional mild blended salsa with roasted jalapeño, tomatoes, and garlic. Family-friendly heat level.",
     longDescription:
       "Our Classic Mild salsa offers the authentic taste of traditional salsa with a gentle heat level that everyone can enjoy. The roasted jalapeños provide just enough warmth to make their presence known without overwhelming the other flavors. The smooth texture and balanced taste make this a versatile salsa that works well in any Mexican or Southwestern dish.",
-    price: "$11.99",
-    image: "/placeholder.svg?height=600&width=800&query=jar of traditional mild red salsa with jalapeño peppers",
+    price: "$12.99",
+    image: "/classic-mild-salsa-jar.png",
     heatLevel: 2,
     ingredients: "Tomatoes, Jalapeño Peppers, Onion, Garlic, Cilantro, Lime Juice, Salt, Spices",
     pairings: "Scrambled eggs, nachos, quesadillas, or as a cooking ingredient in chili",
